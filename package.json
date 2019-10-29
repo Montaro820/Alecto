@@ -1,0 +1,41 @@
+{
+  "name": "atom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maggot820/waxom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maggot820/waxom/issues"
+  },
+  "homepage": "https://github.com/maggot820/waxom#readme",
+  "browserslist": [
+    "last 10 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0"
+  },
+  "description": ""
+}
