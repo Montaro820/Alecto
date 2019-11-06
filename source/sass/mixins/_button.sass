@@ -1,0 +1,36 @@
+@mixin button
+    display: flex
+    min-height: 44px
+    max-width: 44px
+    min-width: 180px
+    max-width: 180px
+    border-radius: 20px
+    align-items: center
+    justify-content: center
+    font-size: $font14px
+    +RalewayBold
+    background: $green
+    color: $white
+    cursor: pointer
+    +transitionDefault
+
+    &:hover
+        +transitionDefault
+
+
+
+@mixin headerButton
+    +button
+    border: solid 2px $white
+    background: transparent
+
+    &:hover
+        color: $green
+        border-color: $green
+
+    
+        
+
+
+
+    

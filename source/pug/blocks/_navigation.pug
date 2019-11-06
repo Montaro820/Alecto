@@ -1,21 +1,23 @@
 nav.navigation
     .navigation-wrapper
         span.navigation-logo Alecto
-        ul.navigation-list
+        ul.navigation-list#navList
             li.navigation-list-item
-                a.navigation-list-link(href="#") HOME
+                a.navigation-list-link(href="#home") HOME
             li.navigation-list-item
-                a.navigation-list-link(href="#") ABOUT
+                a.navigation-list-link(href="#about") ABOUT
             li.navigation-list-item
-                a.navigation-list-link(href="#") WORK
+                a.navigation-list-link(href="#work") WORK
             li.navigation-list-item
-                a.navigation-list-link(href="#") SERVICES
-            li.navigation-list-item
-                a.navigation-list-link(href="#") BLOG
-            li.navigation-list-item
-                object(data="img/svg/search.svg", type="image/svg+xml").navigation-list-item_icon
+                a.navigation-list-link(href="#services") SERVICES
+            li.navigation-list-item 
+                a.navigation-list-link(href="#pricing") PRICING
+            li.navigation-list-item.navigation-list-item__search
+                svg.navigation-list-item-icon
+                    use(xlink:href="img/sprite.svg#search")
+                    
 
-        .navigation-button
+        .navigation-button#navBtn
             .navigation-button-item
             .navigation-button-item
-            .navigation-button-item          
+            .navigation-button-item

@@ -51,6 +51,7 @@ function serve(done){
         server:{
             baseDir: 'build/'
         },
+        host:'192.168.1.102',
         port: 3000
     });
     done();

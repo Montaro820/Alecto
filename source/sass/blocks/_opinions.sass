@@ -1,0 +1,45 @@
+.opinions
+    min-height: 700px
+    width: 100%
+    background: url('../img/opinionsBg.jpg')
+    background-position: center
+    overflow: hidden
+
+    &-container
+        +container
+
+    &-slider
+        position: relative
+        height: 100%
+        width: 100%
+
+        &-item
+            height: 100%
+            width: 100%
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+
+            &-img
+                height: 104px
+                width: 104px
+                margin-bottom: 50px
+
+            &-title
+                +RalewayExtraLight
+                font-size: $font30px
+                color: $white
+                margin-top: 0
+                margin-bottom: 40px
+
+                &__span
+                    +RalewayLight
+                    color: $green
+
+            &-text
+                color: $textColor
+                font-size: $font18px
+                +ProximaNovaLight
+                margin: 0
+        

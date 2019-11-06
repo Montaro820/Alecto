@@ -1,0 +1,59 @@
+.team
+    background: $white
+    min-height: 1000px
+    width: 100%
+    flex-direction: column
+
+    &-container
+        width: 100%
+        min-height: 640px
+        flex-direction: row
+        flex-wrap: wrap
+        margin-top: 100px
+
+    &-item
+        width: 100%
+        height: 400px
+        position: relative
+        +transitionDefault
+
+        &:nth-child(odd)
+            background: #e4e4e4
+
+        &:nth-child(even)
+            background: #f9f9fa
+
+        &-img
+            display: flex
+
+        &-hover
+            display: none
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            text-align: center
+            align-items: center
+            justify-content: center
+            background: $teamItemHoverColor
+            cursor: pointer
+            +transitionDefault
+
+            &__text
+                color: $white
+                font-size: $font36px
+                +RalewayExtraLight
+                
+
+        &:hover
+            +transitionDefault
+        
+        &:hover &-hover
+            display: flex
+            +transitionDefault
+
+    +extralarge
+        &-item
+            width: 20%
+            height: 320px

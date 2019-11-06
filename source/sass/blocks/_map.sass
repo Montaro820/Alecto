@@ -1,0 +1,62 @@
+.map
+    background: $white
+    min-height: 760px
+
+    &-container
+        flex-direction: column
+        width: 100%
+        height: 100%
+
+    &-content,
+    &-image
+        width: 100%
+        height: 760px
+        align-items: center
+
+    &-content
+        width: 48%
+        margin-left: 13%
+        flex-direction: column
+        text-align: left
+        align-items: flex-start
+        justify-content: center
+
+        &-title
+            font-size: $font60px
+            +RalewayExtraLight
+            color: $textColor
+            margin-top: 0
+            margin-bottom: 80px
+
+        &-text
+            font-size: $font18px
+            +ProximaNovaRegular
+            color: $textColor
+            margin-top: 0
+            margin-bottom: 75px
+            line-height: 2em
+
+        &-button
+            +button
+        
+
+    &-image
+        justify-content: center
+        
+        &-img
+            height: 519px
+            width: 100%
+
+    +extralarge
+        &-container
+            flex-direction: row
+
+            &-content,
+            &-image
+                height: 760px
+                align-items: center
+
+            &-content
+                width: 48%
+            &-image
+                width: 50%

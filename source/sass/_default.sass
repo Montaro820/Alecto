@@ -1,10 +1,10 @@
+html
+    scroll-behavior: smooth
 body
     font-size: 16px
     position: relative
     
-    
-
-div,ul,li,img,section,a,object
+div,ul,li,img,section,a,object,svg
     display: flex
 
 ul
@@ -13,3 +13,60 @@ ul
 
 a 
     text-decoration: none
+
+.title
+    position: relative
+    text-align: center
+    font-size: $font60px
+    color: $textColor
+    +RalewayExtraLight
+    margin-top: 100px
+    margin-bottom: 40px
+
+    &::after
+        content: ''
+        position: absolute
+        bottom: -40px
+        left: 50%
+        right: 50%
+        transform: translate(-50%, -50%)
+        width: 30px
+        height: 1px
+        background: $green
+
+.pubText
+    text-align: center
+    font-size: $font18px
+    +ProximaNovaRegular
+    margin-top: 40px
+    color: $textColor
+
+.owl
+    &-dots
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        position: absolute
+        left: 50%
+        right: 50%
+        transform: translate(-50%, -50%)
+        bottom: 5%
+        height: 12px
+        width: 100px
+        z-index: 30
+
+    &-dot
+        display: flex
+        width: 12px
+        height: 12px
+        border-radius: 50%
+        border: solid 2px $white
+        background: transparent
+        +transitionDefault
+        z-index: 40
+        margin: 0
+        padding: 0
+
+        &.active
+            +transitionDefault
+            background: $white

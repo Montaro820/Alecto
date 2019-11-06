@@ -1,0 +1,105 @@
+.prising
+    min-height: 900px
+    background: $prisingBg
+
+    &-continer
+        +container
+
+    &-list
+        width: 100%
+        min-height: 590px
+        margin-top: 110px
+        margin-bottom: 100px
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+
+        &-item
+            min-height: 590px
+            width: 98%
+            background: $white
+            border: solid 1px $white
+            border-radius: 4px
+            overflow: hidden
+            flex-direction: column
+            margin-bottom: 80px
+
+            &:not(&:last-child)
+                margin: 0
+
+            &-cost
+                box-sizing: border-box
+                width: 100%
+                height: 210px
+                flex-direction: column
+                border-bottom: solid 1px $prisingBorderColor
+                padding-left: 35px
+                padding-right: 35px
+                padding-top: 50px
+                padding-bottom: 60px
+
+                &__cost
+                    color: $green
+                    font-size: $font60px
+                    +RalewayExtraLight
+                    margin-bottom: 30px
+
+                &__text
+                    color: $prisingTextColor
+                    font-size: $font18px
+                    +ProximaNovaRegular
+
+            &-list
+                box-sizing: border-box
+                margin: 0
+                list-style: none
+                width: 100%
+                height: 300px
+                padding-top: 90px
+                padding-left: 35px
+                padding-right: 35px
+                padding-bottom: 75px
+                flex-direction: column
+                justify-content: space-between
+
+                &-item
+                    +ProximaNovaRegular
+                    font-size: $font18px
+                    color: $prisingTextColor
+                    +transitionDefault
+                    cursor: pointer
+
+                    &:hover
+                        color: $green
+                        +transitionDefault
+
+            &-button
+                box-sizing: border-box
+                height: 82px
+                background: $green
+                padding-left: 35px
+                padding-right: 35px
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                cursor: pointer
+
+                &__text
+                    color: $white
+                    font-size: $font18px
+                    +RalewayBold
+                    text-transform: uppercase
+                    letter-spacing: 0.2em
+
+                &__icon
+                    fill: $white
+                    height: 20px
+                    width: 22px
+
+    +extralarge
+        &-list
+            justify-content: space-between
+
+            &-item
+                width: 345px
+                margin: 0

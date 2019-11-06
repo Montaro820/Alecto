@@ -1,0 +1,72 @@
+.about
+    min-height: 900px
+    width: 100%
+    background: $white
+
+    &-container
+        +container
+
+    &-content
+        flex-wrap: wrap
+        justify-content: space-around
+        width: 100%
+        min-height: 420px
+        margin-top: 40px
+        margin-bottom: 40px
+
+        &-item
+            width: 295px
+            height: 420px
+            flex-direction: column
+            align-items: center
+            text-align: center
+            +transitionDefault
+            cursor: pointer
+
+            &-round
+                height: 183px
+                width: 183px
+                background: $aboutRoundBg
+                border-radius: 50%
+                justify-content: center
+                align-items: center
+                +transitionDefault
+        
+            &.active &-round
+                background: $green
+                +transitionDefault
+
+            &.active &-icon
+                fill: $white
+                +transitionDefault
+
+            &:hover &-round
+                background: $green
+                +transitionDefault
+
+            &:hover &-icon
+                fill: $white
+                +transitionDefault
+                
+            &-icon
+                fill: $aboutIconColor
+                +transitionDefault
+            
+            &-title
+                color: $black
+                font-size: $font30px
+                +RalewayRegular
+                margin-top: 60px
+                margin-bottom: 40px
+
+            &-text
+                color: $aboutTextColor
+                font-size: $font18px
+                +ProximaNovaRegular
+                margin: 0
+
+        
+    &-button
+        +button
+        margin: 0 auto
+        margin-bottom: 60px

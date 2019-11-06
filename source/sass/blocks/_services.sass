@@ -1,0 +1,110 @@
+.services
+    min-height: 1050px
+    background: $servicesBg
+
+    &-container
+        +container
+
+    &-things
+        width: 100%
+        min-height: 580px
+        margin-top: 180px
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+
+        &-item
+            height: 290px
+            width: 100%
+            flex-direction: column
+            justify-content: center
+            margin-bottom: 40px
+
+            &-roundCon
+                height: 80%
+                width: 100%
+
+            &-descr
+                width: 100%
+                height: 100%
+                flex-direction: column
+                text-align: center
+            
+            &-roundCon,
+            &-descr
+                justify-content: center
+
+            &-round
+                height: 95px
+                width: 95px
+                border-radius: 50%
+                background: $white
+                justify-content: center
+                align-items: center
+                z-index: 10
+
+                &-icon
+
+                    &__portfolio,
+                    &__design,
+                    &__branding,
+                    &__rocket
+                        z-index: 20
+                        display: flex
+                        fill: $green 
+
+                    &__portfolio
+                        height: 29px
+                        width: 32px
+
+                    &__design
+                        height: 32px
+                        width: 32px
+
+                    &__branding
+                        height: 32px
+                        width: 32px
+
+                    &__rocket
+                        height: 32px
+                        width: 32px
+                        transform: scale(-1,-1)
+                        overflow: visible
+
+            
+            &-title
+                font-size: $font52px
+                +RalewayExtraLight
+                color: $textColor
+                margin: 0
+            
+            &-text
+                font-size: $font18px
+                +ProximaNovaRegular
+                color: $textColor
+                line-height: $font30px
+                margin: 0
+
+    +extralarge
+        &-things
+            &-item
+                width: 49%
+                flex-direction: row
+                margin: 0
+
+                &-roundCon
+                    height: 100%
+                    width: 20%
+
+                &-descr
+                    width: 80%
+                    height: 100%
+                    flex-direction: column
+                    text-align: left
+
+                &-roundCon,
+                &-descr
+                    justify-content: flex-start
+
+                &-title
+                    font-size: $font60px
