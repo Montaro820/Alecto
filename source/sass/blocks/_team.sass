@@ -15,7 +15,7 @@
         width: 100%
         height: 400px
         position: relative
-        +transitionDefault
+        transition: 1s all
 
         &:nth-child(odd)
             background: #e4e4e4
@@ -38,20 +38,16 @@
             justify-content: center
             background: $teamItemHoverColor
             cursor: pointer
-            +transitionDefault
+             transition: display 1s ease-out
 
             &__text
                 color: $white
                 font-size: $font36px
                 +RalewayExtraLight
-                
-
-        &:hover
-            +transitionDefault
         
         &:hover &-hover
             display: flex
-            +transitionDefault
+            transition: display 1s ease-out
 
     +extralarge
         &-item
