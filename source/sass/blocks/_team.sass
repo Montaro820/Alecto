@@ -25,6 +25,8 @@
 
         &-img
             display: flex
+            height: 100%
+            width: 100%
 
         &-hover
             display: none
@@ -49,7 +51,23 @@
             display: flex
             transition: display 1s ease-out
 
+    +upTabletWidth
+        &-item
+            width: 50%
+    
+    +afterLaptop
+        &-container
+            justify-content: space-around
+
+        &-item
+            width: 49%
+            margin-bottom: 1%   
+
     +extralarge
+        &-container
+            justify-content: flex-start
+
         &-item
             width: 20%
             height: 320px
+            margin-bottom: 0

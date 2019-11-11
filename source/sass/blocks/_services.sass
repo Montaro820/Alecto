@@ -8,7 +8,8 @@
     &-things
         width: 100%
         min-height: 580px
-        margin-top: 180px
+        margin-top: 90px
+        margin-bottom: 45px
         flex-direction: row
         flex-wrap: wrap
         justify-content: space-between
@@ -84,9 +85,18 @@
                 color: $textColor
                 line-height: $font30px
                 margin: 0
+                padding-left: 10%
+                padding-right: 10%
+
+    +afterLaptop
+        &-things
+            &-item
+                width: 49%
 
     +extralarge
         &-things
+            margin-top: 180px
+            margin-bottom: none
             &-item
                 width: 49%
                 flex-direction: row
@@ -108,3 +118,5 @@
 
                 &-title
                     font-size: $font60px
+                &-text
+                    padding: 0

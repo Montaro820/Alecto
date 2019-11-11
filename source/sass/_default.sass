@@ -46,7 +46,7 @@ section
 
 .owl
     &-dots
-        display: flex
+        display: none
         justify-content: space-between
         flex-direction: row
         position: absolute
@@ -73,3 +73,10 @@ section
         &.active
             +transitionDefault
             background: $white
+
+    &-nav
+        display: none
+
+    +afterLaptop
+        &-dots
+            display: flex

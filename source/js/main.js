@@ -14,6 +14,7 @@ $(document).ready(function(){
             $('#navList').toggleClass('active');
         });
     });
+
     $('#headerSlider').owlCarousel({
         items: 1,
         loop: true,
@@ -21,6 +22,7 @@ $(document).ready(function(){
         mouseDrag: false,
         touchDrag: true,
         lazyLoad: true,
+        navigation: false,
         responsive:{
             0:{
                 nav: false
@@ -38,6 +40,7 @@ $(document).ready(function(){
         mouseDrag: false,
         touchDrag: true,
         lazyLoad: true,
+        navigation: false,
         nav: true
     });
 
