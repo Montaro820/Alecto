@@ -15,18 +15,13 @@
         width: 100%
         height: 400px
         position: relative
-        transition: 1s all
-
-        &:nth-child(odd)
-            background: #e4e4e4
-
-        &:nth-child(even)
-            background: #f9f9fa
+        +transitionDefault
 
         &-img
             display: flex
             height: 100%
             width: 100%
+            +transitionDefault
 
         &-hover
             display: none
@@ -40,7 +35,7 @@
             justify-content: center
             background: $teamItemHoverColor
             cursor: pointer
-             transition: display 1s ease-out
+            +transitionDefault
 
             &__text
                 color: $white
@@ -49,7 +44,7 @@
         
         &:hover &-hover
             display: flex
-            transition: display 1s ease-out
+            +transitionDefault
 
     +upTabletWidth
         &-item

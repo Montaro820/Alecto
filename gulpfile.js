@@ -1,3 +1,4 @@
+'use strict'
 const gulp = require('gulp'),
       sass = require('gulp-sass'),
       autoPrefixer = require('gulp-autoprefixer'),
@@ -38,8 +39,10 @@ const path = {
     other:{
     	source: 'source/other/*',
     	dest: 'build/other/'
+    },
+    sourcemaps:{
+        dest: 'build/css/'
     }
-
 };
 
 function clean(){
@@ -67,8 +70,8 @@ function styles(){
         .pipe(plumber())
         .pipe(sourcemaps.init())
         // .pipe(autoPrefixer())
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-        .pipe(sourcemaps.write())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(path.styles.dest));
 }
 
@@ -90,13 +93,8 @@ function images(){
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
             imagemin.jpegtran({progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
-            })
+            imagemin.optipng({optimizationLevel: 5})
+            // imagemin.svgo({})
         ]))
         .pipe(gulp.dest(path.images.dest))
 }
